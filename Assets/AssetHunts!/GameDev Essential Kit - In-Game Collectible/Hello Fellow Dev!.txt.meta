@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 52a5d969d04ba8f469640ec86c7afcb2
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 301602
+  packageName: 'GameDev Essential Kit - In-Game Collectables [Free Edition]'
+  packageVersion: v1.0.0
+  assetPath: Assets/AssetHunts!/GameDev Essential Kit - In-Game Collectible/Hello
+    Fellow Dev!.txt
+  uploadId: 749407
