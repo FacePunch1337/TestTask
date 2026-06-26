@@ -1,19 +1,54 @@
 # Unity generated folders
-[Ll]ibrary/
-[Tt]emp/
-[Oo]bj/
-[Bb]uild/
-[Bb]uilds/
-[Ll]ogs/
-[Uu]ser[Ss]ettings/
+.utmp/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+*.log
 
-# Visual Studio / Rider / VS Code
+# Unity generated files
+sysinfo.txt
+mono_crash.*
+crashlytics-build.properties
+InitTestScene*.unity*
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+/[Aa]ssets/[Ss]ceneDependencyCache*
+
+# Addressables generated files
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# Visual Scripting generated files
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# Blender backup files
+*.blend1
+*.blend1.meta
+
+# Generated IDE files
+ExportedObj/
+.consulo/
 .vs/
 .vscode/
 .idea/
+.gradle/
 *.csproj
+*.unityproj
 *.sln
+*.slnx
 *.suo
+*.tmp
 *.user
 *.userprefs
 *.pidb
@@ -23,12 +58,15 @@
 *.mdb
 *.opendb
 *.VC.db
+*.DotSettings.user
+/[Aa]ssets/Plugins/Editor/JetBrains*
 
-# Unity generated metadata / crash files
-sysinfo.txt
-*.stackdump
+# Build artifacts
+*.apk
+*.aab
+*.app
 
-# OS files
+# OS/archive noise
 .DS_Store
 Thumbs.db
 Desktop.ini
