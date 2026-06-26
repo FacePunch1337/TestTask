@@ -1,0 +1,193 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9099df31014d4d9fbd38da047556ae06, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::TestTask.Config.GameConfigAsset
+  LevelLength: 300
+  RoadWidth: 7.2
+  RoadSegmentLength: 75
+  RoadSegmentCount: 12
+  CarSpeed: 5
+  CarMaxHp: 100
+  CarBodyRadius: 2.1
+  BaseEnemyCount: 1000
+  EnemySpawnSpacing: 1
+  EnemySpawnSpacingRandomness: 0
+  EnemySpawnAheadDistance: 300
+  EnemyFirstSpawnDistance: 24
+  EnemyWakeDistance: 25
+  EnemyAttackRange: 2
+  EnemyAttackInterval: 0.65
+  EnemyHitCapsuleRadius: 0.75
+  EnemyHitCapsuleHeight: 2.2
+  EnemyAimHeight: 1.15
+  EnemyDespawnBehindDistance: 12
+  EnemyWanderChancePerSecond: 0.18
+  EnemyWanderMinDistance: 1.5
+  EnemyWanderMaxDistance: 5
+  EnemyWanderSpeedMultiplier: 0.45
+  EnemyWaves:
+  - StartDistance: 0
+    SpawnCount: 50
+    SpawnSpacing: 1
+    SpawnSpacingRandomness: 1
+    SpawnAheadDistance: 70
+    DifficultyMultiplier: 1
+    Choices:
+    - EnemyTypeIndex: 0
+      Weight: 1
+      PresenterPrefabOverride: {fileID: 0}
+  - StartDistance: 100
+    SpawnCount: 200
+    SpawnSpacing: 1
+    SpawnSpacingRandomness: 1
+    SpawnAheadDistance: 150
+    DifficultyMultiplier: 1
+    Choices:
+    - EnemyTypeIndex: 0
+      Weight: 1
+      PresenterPrefabOverride: {fileID: 0}
+  - StartDistance: 200
+    SpawnCount: 500
+    SpawnSpacing: 1
+    SpawnSpacingRandomness: 1
+    SpawnAheadDistance: 150
+    DifficultyMultiplier: 1
+    Choices:
+    - EnemyTypeIndex: 0
+      Weight: 1
+      PresenterPrefabOverride: {fileID: 0}
+  FireRate: 3
+  BulletDamage: 20
+  BulletSpeed: 100
+  BulletLifetime: 1.55
+  BulletHitRadius: 0.45
+  TurretYawLimit: 90
+  TurretTargetCone: 5
+  TurretAimAssistStrength: 0
+  TurretAimAssistMaxCorrection: 0
+  TurretDragSensitivity: 160
+  TurretRotationSharpness: 28
+  TurretAimLineLength: 34
+  TurretAimLineWidth: 0.05
+  TurretAimLineStartColor: {r: 1, g: 0.037816707, b: 0, a: 0.78}
+  TurretAimLineEndColor: {r: 1, g: 0.18, b: 0.04, a: 0.18}
+  CarPathFrequency: 0.5
+  CarPathPrimaryAmplitude: 1
+  CarPathSecondaryAmplitude: 0
+  CarSteerYawMultiplier: 1
+  CarSteerSharpness: 3
+  PickupMagnetRadius: 10
+  PickupSpeed: 16
+  XpToLevel: 100
+  XpRequirementMultiplier: 4
+  GearHealAmount: 25
+  MagnetPickupDuration: 5
+  MagnetPickupRadiusMultiplier: 2.5
+  BonusPickupDuration: 3
+  BonusPickupSpeedMultiplier: 2
+  BonusEndKillRadius: 30
+  BarrelSpawnChance: 0.2
+  BarrelSpawnSpacing: 12
+  BarrelSpawnSpacingRandomness: 3
+  BarrelFirstSpawnDistance: 18
+  BarrelSpawnAheadDistance: 70
+  BarrelHp: 35
+  BarrelCollisionDamage: 15
+  BarrelHitRadius: 0.7
+  BarrelHitHeight: 1.25
+  BarrelDamageFlashDuration: 0.09
+  BarrelDrops:
+  - Type: 4
+    Amount: 1
+    Weight: 1
+  FireRateUpgrade:
+    Title: FireRate
+    Icon: {fileID: 21300000, guid: 3a410241d66d66b42a12ce6234e87c70, type: 3}
+    BaseValue: 3
+    ValueMultiplier: 2.5
+  DamageUpgrade:
+    Title: Damage
+    Icon: {fileID: 21300000, guid: 9741940ee1d81134e9623e7b598cc703, type: 3}
+    BaseValue: 5
+    ValueMultiplier: 1
+  PickUpRadiusUpgrade:
+    Title: PickUpRadius
+    Icon: {fileID: 21300000, guid: 2a22ece8f82c25f429c188d4ecdc52c8, type: 3}
+    BaseValue: 20
+    ValueMultiplier: 1
+  CameraOffset: {x: 0, y: 10, z: -10}
+  CameraEulerAngles: {x: 30, y: 0, z: 0}
+  CameraFollowSharpness: 9
+  Prefabs:
+    VehiclePrefab: {fileID: 5964652229484266409, guid: e3cd4186e27735a4abdab5a8c5b95d21, type: 3}
+    TurretPrefab: {fileID: 6059639161313058683, guid: f858b43459ea63c48b099ffa45e96761, type: 3}
+    RoadSegmentPrefab: {fileID: 2095966975862640798, guid: d10909c0301f6cb4e96707e33bbb5328, type: 3}
+    EnemyPresenterPrefab: {fileID: 8922409439440460561, guid: a437d5df7434c424bbafdb88eef73897, type: 3}
+    BulletPresenterPrefab: {fileID: 20869693957227785, guid: e66805e6237361e4381c59bb89d49c92, type: 3}
+    CoinPickupPrefab: {fileID: 8945464449995909243, guid: e2a94c70b1fb4a244a1f9d9c7ff7186a, type: 3}
+    ExperiencePickupPrefab: {fileID: 113461910411990240, guid: 7edabb0a068c6e24fb1b6a68a73672e8, type: 3}
+    GearPickupPrefab: {fileID: 113461910411990240, guid: 67c8f9eb0b279584388699875d0e3b35, type: 3}
+    MagnetPickupPrefab: {fileID: 113461910411990240, guid: d260bfc0012b0774faadd33c1cb6c995, type: 3}
+    BonusPickupPrefab: {fileID: 113461910411990240, guid: c96a1cf07d8e29247814bfe8892f7ab2, type: 3}
+    BarrelPresenterPrefab: {fileID: 295123196313917693, guid: 1957406cb67d31045bf70ecb753451f5, type: 3}
+    BulletMaterial: {fileID: 0}
+    BulletTrailMaterial: {fileID: 0}
+    BulletTrailLength: 5
+    BulletTrailStartWidth: 0.015
+    BulletTrailEndWidth: 0.2
+    BulletTrailTailColor: {r: 1, g: 0.84988654, b: 0, a: 0}
+    BulletTrailHeadColor: {r: 1, g: 0.95, b: 0.08, a: 1}
+    CoinMaterial: {fileID: 0}
+    ExperienceMaterial: {fileID: 0}
+    GearMaterial: {fileID: 0}
+    MagnetMaterial: {fileID: 0}
+    BonusMaterial: {fileID: 0}
+    BarrelMaterial: {fileID: 0}
+    BarrelDamageFlashMaterial: {fileID: 0}
+    RoadSideMaterial: {fileID: 0}
+    TurretAimLineMaterial: {fileID: 0}
+    EnemyMaterial: {fileID: 2100000, guid: 134d6413ae7aad548b4767b354728625, type: 2}
+    EnemyDamageFlashMaterial: {fileID: 2100000, guid: 14a04d16788b071468cb331cc5f0ceaa, type: 2}
+    EnemyDamageFlashDuration: 0.09
+    EnemyDeathParticleColor: {r: 1, g: 0, b: 0, a: 1}
+    VehicleDamageFlashMaterial: {fileID: 0}
+    VehicleInvulnerabilityFlashMaterial: {fileID: 0}
+    VehicleDamageFlashDuration: 0.09
+    VehicleDamagePulseDuration: 0.09
+    VehicleDamagePulseScale: 0.08
+  EnemyTypes:
+  - Id: Runner
+    Hp: 20
+    Speed: 3.5
+    DamagePerSecond: 10
+    XpReward: 10
+    XpDropChance: 1
+    CoinReward: 2
+    CoinDropChance: 0.25
+    GearDropChance: 0.02
+    Color: {r: 1, g: 0.08, b: 0.04, a: 1}
+    RunAnimationSpeed: 9
+    AttackAnimationSpeed: 12
+    HitTilt: 10
+    PresenterPrefabOverride: {fileID: 8922409439440460561, guid: a437d5df7434c424bbafdb88eef73897, type: 3}
+    Animations:
+      Run: {fileID: 7400000, guid: f10c5675df9ef0147b58a8cd0ff25386, type: 2}
+      Idle: {fileID: 7400000, guid: d7de774b276a45042b699d3147a17866, type: 2}
+      Walk: {fileID: 7400000, guid: af3fd41cd75b1eb4786c1519e394d3d7, type: 2}
+      Attack: {fileID: 7400000, guid: 2309713e8a65e96479e9e92d8d8daaa2, type: 2}
+      Hit: {fileID: 7400000, guid: 6ccd3dcc18980dd4fa2181d76bf3cee9, type: 2}
+      IdleSpeed: 1
+      WalkSpeed: 3
+      RunSpeed: 1
+      AttackSpeed: 1
+      HitSpeed: 3
